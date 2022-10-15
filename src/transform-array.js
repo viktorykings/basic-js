@@ -13,7 +13,23 @@ const { NotImplementedError } = require('../extensions/index.js');
  * transform([1, 2, 3, '--discard-prev', 4, 5]) => [1, 2, 4, 5]
  * 
  */
-function transform(/* arr */) {
+function transform(arr ) {
+  // let result = [];
+  // let rules = {
+  //   '--discard-next': i++,
+  //   '--discard-prev': result.pop(),
+  //   '--double-next' : result.push(arr[i+1]),
+  //   '--double-prev' : result.push(arr[i-1])
+  // }
+  // arr.forEach(el=> {
+  //   if(typeof el === 'string'){
+  //     for (let key in rules){
+  //       if (el === key){
+  //         rules[key]
+  //       }
+  //     }
+  //   } else result.push(el)
+  // })
   throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
 }

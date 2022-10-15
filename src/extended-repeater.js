@@ -15,7 +15,13 @@ const { NotImplementedError } = require('../extensions/index.js');
  * => 'STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS**STRINGPLUS00PLUS00PLUS'
  *
  */
-function repeater(/* str, options */) {
+function repeater(str, options ) {
+//   let targetLength = []
+
+//   for (let val in options){
+//     targetLength.push(obj[val])
+//   }
+// str.padEnd()
   throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
 }
