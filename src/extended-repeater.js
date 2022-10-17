@@ -22,7 +22,16 @@ function repeater(str, options ) {
 //     targetLength.push(obj[val])
 //   }
 // str.padEnd()
-  throw new NotImplementedError('Not implemented');
+function createStr(str, separator, repTimes){
+  let newStr = Array(repTimes).fill(str, 0).join(separator);
+  return newStr
+}
+const add = options.addition !== undefined
+        ? createStr(String(options.addition), options.additionSeparator || '|', options.additionRepeatTimes) 
+        : '';
+return createStr(`${str}${add}`, options.separator || '+', options.repeatTimes);
+
+  // throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
 }
 
